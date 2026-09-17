@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <linearGradient id="spl_bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+    <radialGradient id="spl_glow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="spl_beam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="1" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" fill="url(#spl_bg)" />
+  <circle cx="540" cy="850" r="500" fill="url(#spl_glow)" />
+
+  <!-- Central Logo Emblem -->
+  <g transform="translate(540, 800)">
+    <circle cx="0" cy="0" r="160" fill="#0f172a" stroke="#f59e0b" stroke-width="5" />
+    <circle cx="0" cy="0" r="144" fill="none" stroke="#f59e0b" stroke-opacity="0.25" stroke-width="2" />
+
+    <!-- Receipt Graphic -->
+    <g transform="translate(-75, -95)">
+      <path d="M 0 0 L 150 0 L 150 190 L 131 202 L 112 190 L 93 202 L 75 190 L 56 202 L 37 190 L 18 202 L 0 190 Z" fill="#ffffff" />
+      <rect x="22" y="28" width="60" height="10" rx="3" fill="#0f172a" />
+      <rect x="94" y="28" width="34" height="10" rx="5" fill="#f59e0b" />
+      <line x1="22" y1="56" x2="128" y2="56" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="5,4" />
+      <rect x="22" y="74" width="65" height="8" rx="2" fill="#94a3b8" />
+      <rect x="98" y="74" width="30" height="8" rx="2" fill="#475569" />
+      <rect x="22" y="96" width="75" height="8" rx="2" fill="#94a3b8" />
+      <rect x="103" y="96" width="25" height="8" rx="2" fill="#475569" />
+      <rect x="22" y="128" width="48" height="16" rx="4" fill="#0f172a" />
+      <rect x="85" y="128" width="43" height="16" rx="5" fill="#d97706" />
+    </g>
+
+    <!-- Laser Beam -->
+    <rect x="-170" y="-2" width="340" height="8" rx="4" fill="url(#spl_beam)" />
+  </g>
+
+  <!-- Typography Brand Header -->
+  <text x="540" y="1060" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" fill="#ffffff" letter-spacing="1">ReceiptMind</text>
+  <text x="540" y="1105" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="600" font-size="20" fill="#94a3b8" letter-spacing="3">AI SCANNER &amp; WARRANTY VAULT</text>
+
+  <!-- Bottom Security Compliance Badge -->
+  <g transform="translate(540, 1780)">
+    <rect x="-180" y="-24" width="360" height="48" rx="24" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <circle cx="-135" cy="0" r="10" fill="#10b981" />
+    <text x="-110" y="7" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#cbd5e1">Zero-Knowledge Encrypted</text>
+  </g>
+</svg>

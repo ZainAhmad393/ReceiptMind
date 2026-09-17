@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ReceiptMind</string>
+    <string name="tagline">AI Receipt Scanner &amp; Warranty Vault</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_warranties">Warranties</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_settings">Settings</string>
+</resources>

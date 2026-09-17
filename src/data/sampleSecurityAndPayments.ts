@@ -1,0 +1,107 @@
+import { PaymentMethod, SecuritySession, SecurityAuditLog } from '../types';
+
+export const initialPaymentMethods: PaymentMethod[] = [
+  {
+    id: 'pm-visa-4921',
+    type: 'credit_card',
+    brand: 'visa',
+    last4: '4921',
+    expMonth: 8,
+    expYear: 2028,
+    cardholderName: 'Alex Mercer',
+    isDefault: true,
+    billingZip: '10019',
+    billingCountry: 'United States',
+    createdAt: '2025-01-15T10:00:00Z',
+  },
+  {
+    id: 'pm-apple-pay',
+    type: 'apple_pay',
+    brand: 'other',
+    last4: '9082',
+    cardholderName: 'Alex Mercer (Apple Wallet)',
+    isDefault: false,
+    createdAt: '2025-03-20T14:22:00Z',
+  },
+  {
+    id: 'pm-mastercard-8124',
+    type: 'credit_card',
+    brand: 'mastercard',
+    last4: '8124',
+    expMonth: 11,
+    expYear: 2027,
+    cardholderName: 'Alex Mercer',
+    isDefault: false,
+    billingZip: '10019',
+    billingCountry: 'United States',
+    createdAt: '2025-06-10T11:45:00Z',
+  },
+];
+
+export const initialSecuritySessions: SecuritySession[] = [
+  {
+    id: 'sess-curr-1',
+    deviceName: 'MacBook Pro 16" (Apple Silicon)',
+    deviceType: 'desktop',
+    browser: 'Chrome 128.0 (macOS Sequoia)',
+    location: 'San Francisco, CA, USA',
+    ipAddress: '198.51.100.42',
+    lastActive: 'Active Now',
+    isCurrent: true,
+  },
+  {
+    id: 'sess-ios-2',
+    deviceName: 'iPhone 16 Pro Max',
+    deviceType: 'mobile',
+    browser: 'ReceiptMind iOS Native App v1.4',
+    location: 'San Francisco, CA, USA',
+    ipAddress: '172.56.21.90',
+    lastActive: '2 hours ago',
+    isCurrent: false,
+  },
+  {
+    id: 'sess-ipad-3',
+    deviceName: 'iPad Air 5th Gen',
+    deviceType: 'tablet',
+    browser: 'Safari 18.1 (iPadOS)',
+    location: 'San Jose, CA, USA',
+    ipAddress: '198.51.100.99',
+    lastActive: '3 days ago',
+    isCurrent: false,
+  },
+];
+
+export const initialSecurityAuditLogs: SecurityAuditLog[] = [
+  {
+    id: 'log-1',
+    event: 'Biometric Passkey Verified',
+    details: 'Touch ID unlock successfully authorized vault session',
+    timestamp: '2026-09-09T08:15:20Z',
+    ipAddress: '198.51.100.42',
+    severity: 'info',
+  },
+  {
+    id: 'log-2',
+    event: 'Two-Factor Authentication Enforced',
+    details: 'TOTP 6-digit challenge verified for sensitive settings export',
+    timestamp: '2026-09-08T19:40:11Z',
+    ipAddress: '198.51.100.42',
+    severity: 'security',
+  },
+  {
+    id: 'log-3',
+    event: 'Default Payment Method Updated',
+    details: 'Visa ending in 4921 confirmed as primary subscription card',
+    timestamp: '2026-09-06T14:10:05Z',
+    ipAddress: '198.51.100.42',
+    severity: 'info',
+  },
+  {
+    id: 'log-4',
+    event: 'AES-256 GCM Vault Key Rotated',
+    details: 'End-to-end receipt encryption key generation completed',
+    timestamp: '2026-08-30T10:00:00Z',
+    ipAddress: '198.51.100.42',
+    severity: 'security',
+  },
+];

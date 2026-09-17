@@ -1,0 +1,61 @@
+{
+  "id": "/",
+  "name": "ReceiptMind — AI Receipt Scanner & Warranty Tracker",
+  "short_name": "ReceiptMind",
+  "description": "AI-powered receipt scanner, expense tracker, and warranty reminder app with live capture, automated itemization, and spending insights.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "categories": ["finance", "productivity", "business", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Scan Receipt",
+      "short_name": "Scan",
+      "description": "Capture a new receipt with camera or photo upload",
+      "url": "/?action=scan",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Expiring Warranties",
+      "short_name": "Warranties",
+      "description": "Check upcoming warranty expirations",
+      "url": "/?action=warranties",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Spending Analytics",
+      "short_name": "Analytics",
+      "description": "View monthly budget and category breakdowns",
+      "url": "/?action=analytics",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

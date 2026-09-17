@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg_r" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <radialGradient id="glow_r" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="beam_r" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0" />
+      <stop offset="30%" stop-color="#fbbf24" stop-opacity="1" />
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="1" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </linearGradient>
+    <filter id="shadow_r" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- iOS Squircle Rounded Canvas -->
+  <rect width="512" height="512" rx="115" ry="115" fill="url(#bg_r)" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="3" />
+  <circle cx="256" cy="256" r="220" fill="url(#glow_r)" />
+
+  <!-- Receipt Paper -->
+  <g filter="url(#shadow_r)">
+    <path d="M 136 106 L 376 106 L 376 390 L 356 406 L 336 390 L 316 406 L 296 390 L 276 406 L 256 390 L 236 406 L 216 390 L 196 406 L 176 390 L 156 406 L 136 390 Z" fill="#ffffff" />
+    <path d="M 136 106 L 376 106 L 376 390 L 356 406 L 336 390 L 316 406 L 296 390 L 276 406 L 256 390 L 236 406 L 216 390 L 196 406 L 176 390 L 156 406 L 136 390 Z" fill="none" stroke="#f1f5f9" stroke-width="2" />
+  </g>
+
+  <!-- Store Header Bar -->
+  <rect x="164" y="136" width="90" height="14" rx="4" fill="#0f172a" />
+  <rect x="312" y="136" width="36" height="14" rx="7" fill="#f59e0b" />
+
+  <!-- Dashed Line -->
+  <line x1="164" y1="172" x2="348" y2="172" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6,4" />
+
+  <!-- Item Lines -->
+  <rect x="164" y="196" width="110" height="10" rx="3" fill="#94a3b8" />
+  <rect x="306" y="196" width="42" height="10" rx="3" fill="#334155" />
+
+  <rect x="164" y="222" width="130" height="10" rx="3" fill="#94a3b8" />
+  <rect x="312" y="222" width="36" height="10" rx="3" fill="#334155" />
+
+  <rect x="164" y="248" width="95" height="10" rx="3" fill="#94a3b8" />
+  <rect x="302" y="248" width="46" height="10" rx="3" fill="#334155" />
+
+  <!-- Total Summary -->
+  <rect x="164" y="286" width="70" height="18" rx="4" fill="#0f172a" />
+  <rect x="278" y="286" width="70" height="18" rx="6" fill="#d97706" />
+
+  <!-- Laser Scanner Beam -->
+  <rect x="108" y="238" width="296" height="6" rx="3" fill="url(#beam_r)" />
+
+  <!-- Star Security Shield Badge -->
+  <g transform="translate(372, 372)">
+    <circle cx="0" cy="0" r="42" fill="#0f172a" stroke="#f59e0b" stroke-width="4" />
+    <path d="M 0 -21 L 5 -5 L 21 -5 L 9 4 L 13 19 L 0 9 L -13 19 L -9 4 L -21 -5 L -5 -5 Z" fill="#f59e0b" />
+  </g>
+</svg>
